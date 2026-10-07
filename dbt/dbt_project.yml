@@ -1,0 +1,17 @@
+name: 'mini_elt'
+version: '1.0.0'
+config-version: 2
+profile: 'mini_elt'
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  mini_elt:
+    staging:
+      +materialized: incremental
+      +schema: silver
+    marts:
+      +materialized: table
+      +schema: gold

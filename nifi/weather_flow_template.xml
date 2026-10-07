@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description>Mini ELT Weather Ingestion: 5-city Open-Meteo polling into ClickHouse bronze.weather_raw_events</description>
+    <groupId>root</groupId>
+    <name>Mini-ELT-Weather-ClickHouse-Template</name>
+    <snippet>
+        <processGroups>
+            <id>mini-elt-pg-001</id>
+            <name>Weather Ingestion - 5 Cities</name>
+            <comments>Polls Open-Meteo every 60s and streams directly into ClickHouse HTTP endpoint</comments>
+        </processGroups>
+    </snippet>
+</template>

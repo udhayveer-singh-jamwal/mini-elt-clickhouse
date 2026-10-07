@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: bronze
+    schema: bronze
+    tables:
+      - name: weather_raw_events
+        description: "Raw Open-Meteo JSON responses ingested by NiFi per city"
+      - name: fx_raw_events
+        description: "Raw Frankfurter API JSON responses ingested daily by Airflow"
